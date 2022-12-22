@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li 
+{
+background-color: rgb(119, 112, 213) ;
+text-decoration: none;
+display: inline-block;
+margin-left: 180px;
+align-items: center;
+}
+
+a
+{
+
+    color: aliceblue;
+    padding: 20px;
+    line-height: 40px;
+}
+
+footer
+{
+    background-color: rgb(119, 112, 213);
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: blue;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: blue;
+    text-align: center;
+}
+
+.back-h{
+    background: linear-gradient(rgba(255, 255, 0, 0.393),rgba(255, 0, 0, 0.688));
+    padding: 20px;
+}
+
+.img-clientes{
+    margin: 10px;
+    border: 5px solid rgb(126, 30, 30);
+    border-radius: 20%;
+}
+
+figure
+{
+    margin-left: 20px;
+}
+
+p{
+    font-family: serif;
+    font-size: 20px;
+    color: black solid;
+    margin: 20px;
+    text-align: center;    
+}
+
+.historia{
+    color: rgba(219, 25, 25, 0.788);
+    text-decoration: solid;
+}
