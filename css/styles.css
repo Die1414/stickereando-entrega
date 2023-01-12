@@ -6,73 +6,197 @@
     padding: 0;
 }
 
-nav ul li 
+
+header{
+    background: linear-gradient(90deg, rgba(5,93,177,1) 31%, rgba(0,212,255,1) 100%);
+    padding-bottom: 30px;
+    border: solid #055db1 2px;
+}   
+
+nav ul li
 {
-background-color: rgb(119, 112, 213) ;
 text-decoration: none;
-display: inline-block;
-margin-left: 180px;
-align-items: center;
+display: inline;
+font-size: 1.3em;
+margin-left: 6em;
 }
 
-a
-{
-
-    color: aliceblue;
-    padding: 20px;
-    line-height: 40px;
+ul li a{
+    justify-content: space-between;
+    color: white;
 }
+
+/* corrige el fondo blanco del logo y mixea con background - Se usa para alinear con el resto ya que se encontraba movido */
+.logo1{  
+mix-blend-mode: color-burn;
+border: none;
+}
+
+/* se usa para alinear con el resto ya que se encontraba movido */
+header h3{
+    margin-right: 10em;
+}
+
+h1 img{
+    float:left;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
 
 footer
 {
-    background-color: rgb(119, 112, 213);
+background: linear-gradient(90deg, rgba(5,93,177,1) 31%, rgba(0,212,255,1) 100%);
+border: solid #055db1 2px;
+}
+
+.footer-img a{
+    display: inline;
+    margin-left: 30vh;
+    color: white;
+}
+
+.telefono-contacto{
+display: flex;
+justify-content:center;
+align-items: flex-end;
 }
 
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font: bold;
     font-style: italic;
-    text-decoration: underline;
     text-transform: uppercase;
-    color: blue;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font: bold;
-    font-style: italic;
-    text-decoration: underline;
+    font-style: italic; 
     text-transform: uppercase;
-    color: blue;
+    color: black;
     text-align: center;
+    font-size: large;
+    margin-top: 20px;
+    padding-bottom:2cm;
 }
 
-.back-h{
-    background: linear-gradient(rgba(255, 255, 0, 0.393),rgba(255, 0, 0, 0.688));
-    padding: 20px;
-}
 
 .img-clientes{
     margin: 10px;
     border: 5px solid rgb(126, 30, 30);
     border-radius: 20%;
+    transition-property: all;
+    transition-duration: 2seg;
+text-align: center;
 }
+
+p .img-clientes{
+    text-align: center;
+    display: block;
+}
+
 
 figure
 {
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+figure .img-clientes:nth-child(n):hover{
+    transform: scale(1.1);
 }
 
 p{
     font-family: serif;
     font-size: 20px;
     color: black solid;
-    margin: 20px;
+    margin: 5px;
     text-align: center;    
+}
+
+.medida-carrusel{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
 }
 
 .historia{
     color: rgba(219, 25, 25, 0.788);
     text-decoration: solid;
+}
+
+.texto-redes-sociales
+{
+    size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+
+/* Declarando Grid Areas */
+
+header{
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* Contiene las iamgenes de clientes */
+figure{
+    grid-area: figure;
+}
+
+/* Contiene las imagenes de clientes más el texto */
+section{
+    grid-area: section;
+}
+
+.telefono-contacto{
+    margin-top: 50px;
+}
+
+.texto-redes-sociales{
+    margin-bottom: 50px;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.86);
+}
+
+.telefono-contacto p{
+    color: white;
+}
+
+.formulario-contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    border-color: black 5px;
+    margin-left: 25%;
 }

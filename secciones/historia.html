@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="../img/Logo2.jpg" height="200" width="200" alt="Logo de Stickereando con una nota musical">
-        </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">INICIO</a> 
-                    </li>
-                    <li>
-                        <a href="./productos.html">PRODUCTOS</a> 
-                    </li>
-                    <li>
-                        <a href="./packs.html">PACKS</a> 
-                    </li>
-                    <li>
-                        <a href="./historia.html">HISTORIA</a> 
-                    </li>
-                    <li>
-                        <a href="./contactos.html">CONTACTO</a> 
-                    </li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Stickereando</title>
+    </head>
+    <body>
+        <header>
+            <h1 data-aos="fade-right" class="back-h"> Bienvenidos a Stickereando</h1>
+            <h2 data-aos="fade-right" class="back-h"> ¡Pegalos donde quiras!</h3> 
+            <nav class="navbar navbar-expand-lg navbar-dark background-color: #e3f2fd">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../img/Logo2.jpg" alt="Logo de stickereando" width="200" height="100" class="d-inline-block align-text-top logo1"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./packs.html">Packs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./historia.html" >Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./contactos.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-    </header>
+        </header>
 
-    <h1 class="back-h"> Bienvenidos a Stickereando</h1>
-    <h3 class="back-h"> ¡Pegalos donde quiras!</h3>
 
     <section class="historia">
         <p>Hace algunos años comenzamos a emprender en este maravilloso mundo de las imagenes quierendolas llevar a todas las casas y personas donde se les ocurra, en un inicio sólo realizabamos stickers con nuestra ploteadora pero todo fue creciendo rápidamente y decidimos ocupar mayor lugar en el mercado de productos.</p>
     </section>
     <footer>
-        <div class="footre-img">
-            <img src="../img/icons8-facebook-100.png" height="50" width="50" alt="Icono de facebook redireccionamiento">
-            <img src="../img/icons8-linkedin-rodeado-de-círculo-96.png" height="50" width="50" alt="Icono de Linkedin redireccionamiento">
-            <img src="../img/icons8-twitter-100.png" height="50" width="50" alt="Icono de Twitter redireccionamiento">
-            <img src="../img/icons8-instagram-100.png" height="50" width="50" alt="Icono de Instagram redireccionamiento">
+        <p class="texto-redes-sociales">Seguinos en nuestras redes sociales!!</p>
+        <div class="footer-img">
+            <a href="https://facebook.com" target="_blank"><img src="../img/icons8-facebook-100.png" height="50" width="50" alt="Icono de facebook redireccionamiento">Facebook</a>
+            <a href="https://linkedin.com" target="_blank"><img src="../img/icons8-linkedin-rodeado-de-círculo-96.png" height="50" width="50" alt="Icono de Linkedin redireccionamiento">Linkedin</a>
+            <a href="https://twitter.com" target="_blank"><img src="../img/icons8-twitter-100.png" height="50" width="50" alt="Icono de Twitter redireccionamiento">Twitter</a>
+            <a href="https://instagram.com" target="_blank"><img src="../img/icons8-instagram-100.png" height="50" width="50" alt="Icono de Instagram redireccionamiento">Instagram</a>
         </div>
-
-    
+        <div class="telefono-contacto">
+        <img src="../img/icons8-teléfono-sin-utilizar-100.png" height="50px" width="50px" alt="icono de telefono"><p>TEL:11-1111-1111</p>
+        <p>Correo: Stickereando@gmail.com</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
 </body>
 </html>
