@@ -101,7 +101,7 @@ h3{
     border-radius: 20%;
     transition-property: all;
     transition-duration: 2seg;
-text-align: center;
+    text-align: center;
 }
 
 p .img-clientes{
@@ -150,9 +150,16 @@ p{
     text-align: center;
 }
 
+.maps{
+    width: 500px;
+    height: 500px;
+    float: center;
+    margin-left: 33%;
+}
+
 
 /* Declarando Grid Areas */
-
+/* 
 header{
     grid-area: header;
 }
@@ -166,14 +173,17 @@ footer{
 }
 
 /* Contiene las iamgenes de clientes */
+/* 
 figure{
     grid-area: figure;
 }
 
 /* Contiene las imagenes de clientes más el texto */
+/* 
 section{
     grid-area: section;
 }
+*/
 
 .telefono-contacto{
     margin-top: 50px;
