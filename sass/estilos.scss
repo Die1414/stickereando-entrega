@@ -3,11 +3,6 @@
 @import "header";
 
 
-ul li a{
-    justify-content: space-between;
-    color: white;
-}
-
 /* corrige el fondo blanco del logo y mixea con background - Se usa para alinear con el resto ya que se encontraba movido */
 .logo1{  
 mix-blend-mode: color-burn;

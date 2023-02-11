@@ -164,7 +164,7 @@ header{
 }
 
 nav {
-    grid-area: nav;
+grid-area: nav;
 }
 
 footer{
@@ -221,6 +221,8 @@ body {
   transform: translateY(20px);
   transition: all 0.3s ease-in-out;
 }
+
+/* probando nth para alinear y armar animacion de productos*/ 
 
 .product-grid .product:nth-child(1) {
   -webkit-animation: slide-in-left 0.5s ease-in-out forwards;
