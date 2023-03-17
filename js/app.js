@@ -1,39 +1,48 @@
-// alert("hola mundo"); (comprobando el linkeado)
+let carrito = [];
 
-
-let cantidad = 0;
-let totalCompra = 0;
+const productos = [
+  { nombre: 'Remera', precio: 300 },
+  { nombre: 'Pack de 3 remeras', precio: 800 },
+  { nombre: 'Pantalón', precio: 500 },
+  { nombre: 'Camisa', precio: 400 },
+  // se puede seguir agregando productos
+];
 
 while (true) {
-  console.log(`Cantidad actual de Remeras: ${cantidad}`);
+  console.log(`Productos en el carrito: ${JSON.stringify(carrito)}`);
   
-  let respuesta = prompt(`Desea sumar un producto más? En caso de necesitar sumar un producto coloque "+" en caso de querer quitar un producto coloque "-" . Para finalizar la compra escriba "fin".`);
+  let respuesta = prompt(`Desea sumar un producto más? Seleccione uno de los siguientes productos:\n${productos.map(p => p.nombre).join('\n')}\nPara finalizar la compra escriba "fin".`);
 
-  if (respuesta === "+") {
-    if (cantidad < 9) {
-      cantidad++;
-      totalCompra += 300; // se suma $300 por cada producto agregado
-    } else {
-      alert("Para cantidades mayores a 10 le sugerimos ir a la sección de packs.");
-    }
-  } else if (respuesta === "-") {
-    if (cantidad > 0) {
-      cantidad--;
-      totalCompra -= 300; // se resta $300 por cada producto quitado
-    } else {
-      console.log("No puede quitar más productos, ya que no hay ninguno en el carrito.");
-    }
-  } else if (respuesta === "fin") {
-    console.log(`Compra finalizada. Cantidad total de Remeras: ${cantidad}`);
+  if (respuesta === 'fin') {
+    console.log(`Compra finalizada. Productos en el carrito: ${JSON.stringify(carrito)}`);
     break;
+  }
+  
+  let producto = productos.find(p => p.nombre === respuesta);
+  
+  if (producto) {
+    let itemCarrito = carrito.find(i => i.nombre === respuesta);
+    if (itemCarrito) {
+      itemCarrito.cantidad++;
+      itemCarrito.subtotal += producto.precio;
+    } else {
+      carrito.push({
+        nombre: producto.nombre,
+        precio: producto.precio,
+        cantidad: 1,
+        subtotal: producto.precio
+      });
+    }
+    console.log(`Se agregó ${producto.nombre} al carrito.`);
   } else {
-    console.log("Respuesta no válida. Por favor ingrese un signo +, - o la palabra 'fin'.");
+    console.log('Respuesta no válida. Por favor seleccione un producto de la lista o escriba "fin" para finalizar la compra.');
   }
 }
 
-// Calculamos el impuesto y mostramos el total final
-const impuesto = totalCompra * 0.21;
-const totalConImpuesto = totalCompra + impuesto;
+let totalCompra = carrito.reduce((total, item) => total + item.subtotal, 0);
+let impuesto = totalCompra * 0.21;
+let totalConImpuesto = totalCompra + impuesto;
+
 console.log(`Total de la compra: $${totalCompra}`);
 console.log(`Impuesto del 21%: $${impuesto}`);
 console.log(`Total con impuesto: $${totalConImpuesto}`);
