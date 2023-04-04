@@ -1,0 +1,62 @@
+[
+	{
+		"nombre": "Remera Poker",
+		"precio": 500,
+		"imagen": "../../img/estampado-1.jpg",
+		"id": 1
+	},
+	{
+		"nombre": "Remera Messi",
+		"precio": 700,
+		"imagen": "../../img/estampado-2.webp",
+		"id": 2
+	},
+	{
+		"nombre": "Goku Nube voladora",
+		"precio": 700,
+		"imagen": "../../img/estampado-3.jpg",
+		"id": 3
+	},
+	{
+		"nombre": "Oso Ted",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 4
+	},
+	{
+		"nombre": "Oso Ted",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 6
+	},
+	{
+		"nombre": "Oso Ted",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 7
+	},
+	{
+		"nombre": "Oso Ted",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 8
+	},
+	{
+		"nombre": "Oso Ted",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 9
+	},
+	{
+		"nombre": "Oso Ted",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 10
+	},
+	{
+		"nombre": "Mickey Old",
+		"precio": 700,
+		"imagen": "../../img/estampado-4.webp",
+		"id": 11
+	}
+]
